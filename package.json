@@ -1,0 +1,22 @@
+{
+  "name": "js_dev",
+  "version": "1.0.0",
+  "description": "This is my App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mon8Cats/JS_Dev.git"
+  },
+  "author": "stone kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mon8Cats/JS_Dev/issues"
+  },
+  "homepage": "https://github.com/Mon8Cats/JS_Dev#readme",
+  "dependencies": {
+    "redux": "^4.0.4"
+  }
+}

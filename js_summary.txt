@@ -1,0 +1,89 @@
+1) Understand not imitate
+2) Understanding, frameworks, and the weird parts
+3) Conceptual Aside
+  a) Syntax Parser - check if the code's grammar is valid and translate it into computer instrcutions.
+  b) Lexical Environment - where you write the code is important.
+  c) Execution Context - the currently running lexical environment is managed via the execution context. It is a wrapper to help manage the code that is running.
+  c) Lexical Environments
+4) Name/Value Pairs - A name may be defined more than onece, but only can have one value in any given context.
+5) Object - a collection of name/value pairs
+6) The global environment and the global object
+  a) When a program is running, the executon contenxt is created and run.
+  b) Global Object (window), "this" are created by the JavaScript engine.
+    Global Object(window) = this
+    Glbaol is not inside a function
+7) Inside an Executon Context:
+    Global Object, "this", Outer Environment, Your Code
+
+8) The Execution Context: Creation and Hositing:
+  -function and variable are hosted - they can be called earlier than their declaration.
+  -vairable are undefined but not throwing some errors
+9) Creation Phase
+  Global Object, "this", Other Environment (link)
+  Function Setup, Variable Setup = undefined
+
+  Setup Memory Space for Variables and Functions in your code "Hoisting" before your code is executed.
+  Variable are not initialize = undefined
+
+10) Executoin Phase
+  The variable assignment happen
+
+11) JavaScript and "Undefined"
+  undefined != not defined
+  undefined = a special key or value in JavaScript
+
+  var a;
+  if (a === undefined) { console.log('a is undefined)}
+
+  if a is not declared -> throw an arror.
+  if a is delared, then during the creation phase, it is set to undefined
+  never set undefined as
+    a = undefined; 
+  let JavaScript set it as undefiend.
+
+12) EXCUTON CONTEXT
+  CREATION PHASE,
+  EXCUTION PHASE,
+
+13) JavaScript - Single Threaded
+  One command at a time
+
+  Synchronous: one at a time
+
+14) Functioin Invocation and the Execution Stack
+  Invocation: running/calling a function
+
+  function b(){}
+  function a(){ b();}
+  a();
+
+  What is created?
+    Global Execution Context
+    Attach functions and Variables
+
+  Execution Stack
+    Execution Context : b()   --(3)
+    Execution Context : a()   --(2)
+    Global Execution Context  --(1)
+
+    (1) created and executed,
+    (2) created and executed,
+    (3) created and executed,
+    (3) finished and popped
+    (2) finished and popped
+    (1) finished and popped
+
+15) Functions, Context, And Variable Environments
+  Variable Environment - where the variables live
+    How they relate to each other in memory?
+  Scope:
+    Each variable is defined in its own executon context
+    
+
+
+  
+
+
+
+
+

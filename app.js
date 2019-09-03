@@ -1,9 +1,28 @@
-//var myVar = document.getElementById("myVar");
-//console.log(myVar);
-//myVar.innerHTML = "Yes You can";
-
-function myFunc() {
-  return 1 + 1;
+function b() {
+  //var myVar;
+  console.log("In b():", myVar);
 }
 
-console.log(myFunc());
+function a() {
+  var myVar = 2;
+  console.log("In a():", myVar);
+  b();
+}
+
+function x() {
+  function y() {
+    console.log("In y():", myVar);
+  }
+
+  var myVar = 2;
+  y();
+}
+
+var myVar = 999;
+console.log("In Gloval():", myVar);
+//a();
+x();
+console.log("In Gloval():", myVar);
+
+var myElem = document.getElementById("myInput");
+myElem.innerHTML = "Hello Steve";

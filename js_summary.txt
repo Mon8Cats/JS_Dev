@@ -78,7 +78,56 @@
     How they relate to each other in memory?
   Scope:
     Each variable is defined in its own executon context
-    
+
+
+16) The Scope Chain
+  Reference to Outer Environment - Lexical Environment
+  Lexical <-> Execution Context
+  Lexical: How it is defined 
+  Execution Context: How it is called
+
+17) Scope, ES6
+  Scope where a variable is avaiable in your code.
+  var,
+  let - block scoping
+  const - 
+
+18) Aynchronous Callbacks?
+  Asynchrous: more than one at a time?
+  Browesr
+    JavaScript Engine - Hooks?
+    Rendering Engine
+    HTTP Request
+
+  Execution Stack
+  Event Queue - check wethere Execution Stack is empty or not?
+    Click, HTPRequest,
+  When the Execution Stack is empty, the JavaScript periodically check the Event Queue, then put Function for the event into the Execution Stack.
+
+19) Type Coercion
+  undefined, null, "" -> false
+  if(some_thing){ }
+  // JavaScript converts some_thing to boolean!
+  if(undefined_or_null_or_emptyString){ ... }
+
+20) Default Values
+  function parameters --> initialzied as undefiend
+  console.log("Hello " + undefined_param) --> "Hello undefined"
+  name = name || "Hello Steve" --> "Hello Steve" for undefined "name" 
+
+  undefined || "Hello" -> Hello
+  null || "Hello" -> Hello
+  "" || "Hello"  -> Hello
+  0 || 1 --> 1
+
+21) Frameworks 
+  Frameworks  - Angular
+  Libraries   - jQuery
+
+  
+
+
+  
 
 
   
